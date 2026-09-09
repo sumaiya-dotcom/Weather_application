@@ -1,0 +1,35 @@
+
+--- 2026-09-09 23:18:18 ---
+City: Goa, IN
+Temperature: 26.21 °C (feels like 26.21 °C)
+Humidity: 93%
+Description: overcast clouds
+Wind Speed: 0.27 m/s
+
+--- 2026-09-09 23:19:17 ---
+City: Goa, IN
+Temperature: 26.21 °C (feels like 26.21 °C)
+Humidity: 93%
+Description: overcast clouds
+Wind Speed: 0.27 m/s
+
+--- 2026-09-09 23:19:18 ---
+City: Karnataka, IN
+Temperature: 24.12 °C (feels like 24.68 °C)
+Humidity: 80%
+Description: overcast clouds
+Wind Speed: 1.48 m/s
+
+--- 2026-09-09 23:19:18 ---
+City: Mumbai, IN
+Temperature: 28.99 °C (feels like 33.47 °C)
+Humidity: 74%
+Description: few clouds
+Wind Speed: 3.09 m/s
+
+--- 2026-09-09 23:25:37 ---
+City: Goa, IN
+Temperature: 26.21 °C (feels like 26.21 °C)
+Humidity: 93%
+Description: broken clouds
+Wind Speed: 0.4 m/s
