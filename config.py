@@ -1,8 +1,4 @@
-"""
-config.py
----------
-Project settings. API keys stay here (loaded from .env), not in weather.py.
-"""
+
 
 import os
 from dotenv import load_dotenv
@@ -17,8 +13,8 @@ HISTORY_FILE = "weather_history.txt"
 
 
 def validate_config():
-    """Stop early if the API key is missing or still the placeholder."""
-    if not API_KEY or API_KEY == "your_api_key_here":
+  
+    if not API_KEY or API_KEY == "a1d5286dc0a9e7e8571ddba5fb7d265a":
         raise ValueError(
             "Missing API key. Open the .env file and set OPENWEATHER_API_KEY "
             "to the key from https://home.openweathermap.org/users/sign_up"

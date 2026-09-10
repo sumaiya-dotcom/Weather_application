@@ -1,8 +1,4 @@
-"""
-weather.py
-----------
-Talks to the OpenWeatherMap REST API (GET) and to weather_history.txt.
-"""
+
 
 from datetime import datetime
 
@@ -12,16 +8,11 @@ from config import API_KEY, BASE_URL, HISTORY_FILE, UNITS
 
 
 class WeatherError(Exception):
-    """Friendly error for main.py to print."""
+    
 
 
 def fetch_weather(city_name):
-    """
-    GET current weather for one city.
-
-    Request:  GET /data/2.5/weather?q=London&appid=KEY&units=metric
-    Response: JSON dictionary with temperature, humidity, wind, etc.
-    """
+   
     params = {
         "q": city_name,
         "appid": API_KEY,
@@ -63,7 +54,7 @@ def fetch_weather(city_name):
 
 
 def parse_weather(data):
-    """Turn the API JSON into a smaller dictionary we control."""
+  
     try:
         return {
             "city": data["name"],
@@ -81,7 +72,7 @@ def parse_weather(data):
 
 
 def format_report(weather):
-    """Turn one weather dictionary into readable text."""
+    
     return (
         f"City: {weather['city']}, {weather['country']}\n"
         f"Temperature: {weather['temperature']} °C "
@@ -93,7 +84,7 @@ def format_report(weather):
 
 
 def save_report(report_text):
-    """Append one report to the history file (write / append)."""
+    
     stamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     block = f"\n--- {stamp} ---\n{report_text}\n"
 
@@ -107,7 +98,7 @@ def save_report(report_text):
 
 
 def read_history():
-    """Read the whole history file and return its text."""
+  
     try:
         with open(HISTORY_FILE, "r", encoding="utf-8") as file:
             return file.read()
@@ -118,10 +109,8 @@ def read_history():
 
 
 def compare_cities(weather_list):
-    """
-    weather_list is a list of weather dictionaries.
-    Returns a short comparison using a loop over that list.
-    """
+   
+    
     if not weather_list:
         return "No cities to compare."
 

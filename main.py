@@ -1,17 +1,4 @@
-"""
-main.py
--------
-Weather Information Application (Week 1 practice).
 
-Run:
-    py main.py
-
-Menu:
-  1) Look up one city
-  2) Compare several cities (lists + loops)
-  3) View saved history (reading a file)
-  4) Quit
-"""
 
 from config import validate_config
 from weather import (
